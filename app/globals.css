@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-dark: #0a4a2e;
+  --green-mid: #1a6b42;
+  --gold: #c8a84b;
+  --gold-light: #e8c96a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-green-dark font-medium px-7 py-3 rounded transition-colors hover:bg-gold-light;
+  }
+  .btn-outline {
+    @apply border border-white/40 text-white px-7 py-3 rounded transition-colors hover:border-gold-light hover:bg-gold/10;
+  }
+  .section-label {
+    @apply text-xs tracking-widest uppercase text-green-mid font-medium mb-1;
+  }
+  .section-title {
+    @apply font-playfair text-3xl font-bold text-gray-900 mb-3;
+  }
+}

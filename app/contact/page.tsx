@@ -35,15 +35,15 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <section className="bg-gradient-to-br from-[#0a4a2e] to-[#1a6b42] py-20 px-6 text-center">
-        <p className="text-[#e8c96a] text-xs uppercase tracking-widest mb-3">Get in touch</p>
+      <section className="bg-gradient-to-br from-[#0d1b4b] to-[#1a2f7a] py-20 px-6 text-center">
+        <p className="text-[#e63333] text-xs uppercase tracking-widest mb-3">Get in touch</p>
         <h1 className="font-playfair text-4xl font-bold text-white mb-4">Contact Us</h1>
         <p className="text-white/70 max-w-lg mx-auto text-base leading-relaxed">
           Our team is ready to help with your migration and education enquiries.
         </p>
       </section>
 
-      <section className="py-20 px-6 bg-[#faf7f2]">
+      <section className="py-20 px-6 bg-[#f4f6ff]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
           {/* Form */}
@@ -51,7 +51,7 @@ export default function ContactPage() {
             {submitted ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-5">
-                  <svg className="w-8 h-8 text-[#1a6b42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#1a2f7a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -66,20 +66,20 @@ export default function ContactPage() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-medium text-gray-600 mb-1">First name</label>
-                      <input required type="text" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a6b42] transition-colors" />
+                      <input required type="text" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a2f7a] transition-colors" />
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-600 mb-1">Last name</label>
-                      <input required type="text" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a6b42] transition-colors" />
+                      <input required type="text" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a2f7a] transition-colors" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1">Email</label>
-                    <input required type="email" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a6b42] transition-colors" />
+                    <input required type="email" className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a2f7a] transition-colors" />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1">Service interested in</label>
-                    <select className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a6b42] transition-colors bg-white">
+                    <select className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a2f7a] transition-colors bg-white">
                       <option>Student Visa & Education</option>
                       <option>Skilled Migration</option>
                       <option>Family / Partner Visa</option>
@@ -93,11 +93,11 @@ export default function ContactPage() {
                     <textarea
                       required
                       rows={4}
-                      className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a6b42] transition-colors resize-none"
+                      className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#1a2f7a] transition-colors resize-none"
                       placeholder="Tell us about your situation..."
                     />
                   </div>
-                  <button type="submit" className="w-full bg-[#1a6b42] text-white py-3 rounded-lg text-sm font-medium hover:bg-[#0a4a2e] transition-colors">
+                  <button type="submit" className="w-full bg-[#1a2f7a] text-white py-3 rounded-lg text-sm font-medium hover:bg-[#0d1b4b] transition-colors">
                     Send Message
                   </button>
                 </form>
@@ -116,8 +116,8 @@ export default function ContactPage() {
                   { label: "Location", val: "Sydney, New South Wales, Australia", icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" },
                 ].map(item => (
                   <div key={item.label} className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-[#0a4a2e]/8 flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-[#1a6b42]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-8 h-8 rounded-full bg-[#0d1b4b]/8 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-[#1a2f7a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} />
                       </svg>
                     </div>

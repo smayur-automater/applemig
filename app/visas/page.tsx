@@ -174,15 +174,15 @@ export default function ImmigrationPage() {
     <>
       <Navbar />
 
-      <section className="bg-gradient-to-br from-[#0a4a2e] to-[#1a6b42] py-20 px-6 text-center">
-        <p className="text-[#e8c96a] text-xs uppercase tracking-widest mb-3">Immigration Services</p>
+      <section className="bg-gradient-to-br from-[#0d1b4b] to-[#1a2f7a] py-20 px-6 text-center">
+        <p className="text-[#e63333] text-xs uppercase tracking-widest mb-3">Immigration Services</p>
         <h1 className="font-playfair text-4xl font-bold text-white mb-4">Australian Immigration Services</h1>
         <p className="text-white/70 max-w-xl mx-auto text-base leading-relaxed">
           We handle all major Australian visa categories. Click any visa to see requirements, then book a free consultation with our team.
         </p>
       </section>
 
-      <section className="py-16 px-6 bg-[#faf7f2]">
+      <section className="py-16 px-6 bg-[#f4f6ff]">
         <div className="max-w-5xl mx-auto">
           {/* Filter */}
           <div className="flex flex-wrap gap-2 mb-8">
@@ -192,8 +192,8 @@ export default function ImmigrationPage() {
                 onClick={() => setFilter(t)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   filter === t
-                    ? "bg-[#1a6b42] text-white"
-                    : "bg-white border border-gray-200 text-gray-600 hover:border-[#1a6b42]"
+                    ? "bg-[#1a2f7a] text-white"
+                    : "bg-white border border-gray-200 text-gray-600 hover:border-[#1a2f7a]"
                 }`}
               >
                 {t}
@@ -206,8 +206,8 @@ export default function ImmigrationPage() {
               <div
                 key={v.code}
                 onClick={() => setSelected(selected?.code === v.code ? null : v)}
-                className={`bg-white border-l-4 border-[#1a6b42] border rounded-lg p-5 cursor-pointer transition-all duration-200 ${
-                  selected?.code === v.code ? "shadow-lg ring-1 ring-[#1a6b42]/20" : "hover:shadow-md"
+                className={`bg-white border-l-4 border-[#1a2f7a] border rounded-lg p-5 cursor-pointer transition-all duration-200 ${
+                  selected?.code === v.code ? "shadow-lg ring-1 ring-[#1a2f7a]/20" : "hover:shadow-md"
                 }`}
               >
                 <div className="flex items-start justify-between mb-2">
@@ -225,7 +225,7 @@ export default function ImmigrationPage() {
                     <ul className="space-y-2 mb-4">
                       {v.requirements.map(r => (
                         <li key={r} className="flex items-start gap-2 text-sm text-gray-600">
-                          <svg className="w-4 h-4 text-[#1a6b42] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4 text-[#1a2f7a] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                           {r}
@@ -234,7 +234,7 @@ export default function ImmigrationPage() {
                     </ul>
                     <button
                       onClick={e => { e.stopPropagation(); setModalOpen(true); }}
-                      className="bg-[#1a6b42] text-white text-sm px-5 py-2 rounded hover:bg-[#0a4a2e] transition-colors"
+                      className="bg-[#1a2f7a] text-white text-sm px-5 py-2 rounded hover:bg-[#0d1b4b] transition-colors"
                     >
                       Enquire about this visa →
                     </button>
@@ -245,14 +245,14 @@ export default function ImmigrationPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-12 bg-[#0a4a2e] rounded-2xl p-8 text-center text-white">
+          <div className="mt-12 bg-[#0d1b4b] rounded-2xl p-8 text-center text-white">
             <h3 className="font-playfair text-2xl font-bold mb-3">Not Sure Which Visa is Right for You?</h3>
             <p className="text-white/70 text-sm mb-6 max-w-md mx-auto">
               Book a free consultation with our team. We'll assess your situation and recommend the best pathway.
             </p>
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-[#c8a84b] text-[#0a4a2e] font-medium px-8 py-3 rounded hover:bg-[#e8c96a] transition-colors"
+              className="bg-white text-[#0d1b4b] font-medium px-8 py-3 rounded hover:bg-[#e63333] transition-colors"
             >
               Book Free Consultation
             </button>

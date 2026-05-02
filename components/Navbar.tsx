@@ -82,26 +82,26 @@ export default function Navbar() {
   return (
     <>
       {/* TOP SOCIAL / CONTACT BAR — like Aussizz */}
-      <div className="bg-[#061e12] text-white/60 text-xs py-2 px-6 hidden md:block">
+      <div className="bg-[#060d2e] text-white/60 text-xs py-2 px-6 hidden md:block">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 text-[#c8a84b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
-              Migration: <a href="tel:+61470519421" className="hover:text-[#e8c96a] transition-colors">+61 470 519 421</a>
+              Migration: <a href="tel:+61470519421" className="hover:text-[#e63333] transition-colors">+61 470 519 421</a>
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 text-[#c8a84b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
               </svg>
-              Admission: <a href="tel:+61480047407" className="hover:text-[#e8c96a] transition-colors">+61 480 047 407</a>
+              Admission: <a href="tel:+61480047407" className="hover:text-[#e63333] transition-colors">+61 480 047 407</a>
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 text-[#c8a84b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              <a href="mailto:team@applemigration.com.au" className="hover:text-[#e8c96a] transition-colors">team@applemigration.com.au</a>
+              <a href="mailto:team@applemigration.com.au" className="hover:text-[#e63333] transition-colors">team@applemigration.com.au</a>
             </span>
           </div>
           {/* Social icons */}
@@ -114,7 +114,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="text-white/50 hover:text-[#c8a84b] transition-colors"
+                className="text-white/50 hover:text-white transition-colors"
               >
                 {s.icon}
               </a>
@@ -124,25 +124,25 @@ export default function Navbar() {
       </div>
 
       {/* MAIN NAV */}
-      <nav className="bg-[#0a4a2e] sticky top-0 z-50 shadow-md">
+      <nav className="bg-[#0d1b4b] sticky top-0 z-50 shadow-md">
         <div className="max-w-6xl mx-auto px-6 h-[68px] flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#c8a84b] flex items-center justify-center font-playfair font-bold text-xl text-[#0a4a2e]">
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-playfair font-bold text-xl text-[#0d1b4b]">
               A
             </div>
             <div>
               <div className="font-playfair text-white font-semibold leading-tight">Apple Migration</div>
-              <div className="text-[10px] font-light text-[#e8c96a] tracking-wide">Education & Immigration Consultancy</div>
+              <div className="text-[10px] font-light text-[#e63333] tracking-wide">Education & Immigration Consultancy</div>
             </div>
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
-            <Link href="/about" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e8c96a] hover:bg-white/5 transition-colors">
+            <Link href="/about" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e63333] hover:bg-white/5 transition-colors">
               Discover Us
             </Link>
-            <Link href="/visas" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e8c96a] hover:bg-white/5 transition-colors">
+            <Link href="/visas" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e63333] hover:bg-white/5 transition-colors">
               Immigration
             </Link>
 
@@ -150,7 +150,7 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setStudentOpen(!studentOpen)}
-                className="flex items-center gap-1 text-white/85 text-sm px-4 py-2 rounded hover:text-[#e8c96a] hover:bg-white/5 transition-colors"
+                className="flex items-center gap-1 text-white/85 text-sm px-4 py-2 rounded hover:text-[#e63333] hover:bg-white/5 transition-colors"
               >
                 Student Services
                 <svg className={`w-3.5 h-3.5 transition-transform ${studentOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -164,7 +164,7 @@ export default function Navbar() {
                       key={s.label}
                       href={s.href}
                       onClick={() => setStudentOpen(false)}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#0a4a2e] hover:text-white transition-colors"
+                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#0d1b4b] hover:text-white transition-colors"
                     >
                       {s.label}
                     </Link>
@@ -173,13 +173,13 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/contact" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e8c96a] hover:bg-white/5 transition-colors">
+            <Link href="/contact" className="text-white/85 text-sm px-4 py-2 rounded hover:text-[#e63333] hover:bg-white/5 transition-colors">
               Contact Us
             </Link>
 
             <button
               onClick={() => setModalOpen(true)}
-              className="ml-2 bg-[#c8a84b] text-[#0a4a2e] text-sm font-semibold px-5 py-2.5 rounded hover:bg-[#e8c96a] transition-colors"
+              className="ml-2 bg-white text-[#0d1b4b] text-sm font-semibold px-5 py-2.5 rounded hover:bg-[#e63333] transition-colors"
             >
               Free Consultation
             </button>
@@ -197,11 +197,11 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden bg-[#061e12] px-6 py-4 flex flex-col gap-1 border-t border-white/10">
+          <div className="md:hidden bg-[#060d2e] px-6 py-4 flex flex-col gap-1 border-t border-white/10">
             {/* Mobile social */}
             <div className="flex items-center gap-3 pb-3 mb-2 border-b border-white/10">
               {socialLinks.map(s => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-[#c8a84b]">{s.icon}</a>
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white">{s.icon}</a>
               ))}
             </div>
             <Link href="/about" className="text-white/80 text-sm py-2" onClick={() => setMobileOpen(false)}>Discover Us</Link>
@@ -227,7 +227,7 @@ export default function Navbar() {
             <Link href="/contact" className="text-white/80 text-sm py-2" onClick={() => setMobileOpen(false)}>Contact Us</Link>
             <button
               onClick={() => { setModalOpen(true); setMobileOpen(false); }}
-              className="mt-2 bg-[#c8a84b] text-[#0a4a2e] text-sm font-semibold px-5 py-2.5 rounded w-full"
+              className="mt-2 bg-white text-[#0d1b4b] text-sm font-semibold px-5 py-2.5 rounded w-full"
             >
               Free Consultation
             </button>

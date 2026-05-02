@@ -10,14 +10,14 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#061e12]">
+    <footer className="bg-[#060d2e]">
       <div className="max-w-6xl mx-auto px-6 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
 
           {/* Brand + socials */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-full bg-[#c8a84b] flex items-center justify-center font-playfair font-bold text-[#0a4a2e]">A</div>
+              <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center font-playfair font-bold text-[#0d1b4b]">A</div>
               <div className="font-playfair text-white font-semibold">Apple Migration</div>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs mb-5">
@@ -32,9 +32,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#c8a84b] flex items-center justify-center transition-colors group"
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white flex items-center justify-center transition-colors group"
                 >
-                  <svg className="w-3.5 h-3.5 text-white/50 group-hover:text-[#0a4a2e] transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 text-white/50 group-hover:text-[#0d1b4b] transition-colors" fill="currentColor" viewBox="0 0 24 24">
                     <path d={s.path} />
                   </svg>
                 </a>
@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {["Student Visa (500)", "Temporary Graduate (485)", "Partner Visa 820/801", "Skilled Independent 189", "State Sponsorship 190"].map(s => (
                 <li key={s}>
-                  <Link href="/visas" className="text-white/40 text-sm hover:text-[#e8c96a] transition-colors">{s}</Link>
+                  <Link href="/visas" className="text-white/40 text-sm hover:text-[#e63333] transition-colors">{s}</Link>
                 </li>
               ))}
             </ul>
@@ -59,14 +59,14 @@ export default function Footer() {
             <h4 className="text-white/60 text-xs uppercase tracking-widest mb-4 font-medium">Contact Us</h4>
             <div className="space-y-3">
               <div>
-                <p className="text-[#e8c96a] text-[10px] uppercase tracking-wide mb-0.5">Australia Head Office</p>
+                <p className="text-[#e63333] text-[10px] uppercase tracking-wide mb-0.5">Australia Head Office</p>
                 <p className="text-white/40 text-xs leading-relaxed">470 St Kilda Road, Melbourne VIC 3004</p>
               </div>
               <div>
-                <p className="text-white/40 text-xs">Admission: <a href="tel:+61480047407" className="hover:text-[#e8c96a] transition-colors">+61 480 047 407</a></p>
-                <p className="text-white/40 text-xs">Migration: <a href="tel:+61470519421" className="hover:text-[#e8c96a] transition-colors">+61 470 519 421</a></p>
+                <p className="text-white/40 text-xs">Admission: <a href="tel:+61480047407" className="hover:text-[#e63333] transition-colors">+61 480 047 407</a></p>
+                <p className="text-white/40 text-xs">Migration: <a href="tel:+61470519421" className="hover:text-[#e63333] transition-colors">+61 470 519 421</a></p>
               </div>
-              <a href="mailto:team@applemigration.com.au" className="text-white/40 text-xs hover:text-[#e8c96a] transition-colors block">
+              <a href="mailto:team@applemigration.com.au" className="text-white/40 text-xs hover:text-[#e63333] transition-colors block">
                 team@applemigration.com.au
               </a>
             </div>
@@ -78,7 +78,7 @@ export default function Footer() {
           <p className="text-white/25 text-xs">© 2025 Apple Education & Immigration Consultancy. All rights reserved.</p>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms of Service", "Complaints"].map(l => (
-              <Link key={l} href="/contact" className="text-white/25 text-xs hover:text-[#e8c96a] transition-colors">{l}</Link>
+              <Link key={l} href="/contact" className="text-white/25 text-xs hover:text-[#e63333] transition-colors">{l}</Link>
             ))}
           </div>
         </div>

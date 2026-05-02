@@ -80,33 +80,33 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="bg-gradient-to-br from-[#0a4a2e] via-[#1a6b42] to-[#2e8b5a] py-24 px-6 text-center relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-72 h-72 rounded-full border border-[#c8a84b]/20 -translate-y-1/3 translate-x-1/3 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full border border-[#c8a84b]/10 translate-y-1/3 -translate-x-1/3 pointer-events-none" />
+      <section className="bg-gradient-to-br from-[#0d1b4b] via-[#1a2f7a] to-[#2040a0] py-24 px-6 text-center relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-72 h-72 rounded-full border border-white/20 -translate-y-1/3 translate-x-1/3 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full border border-white/10 translate-y-1/3 -translate-x-1/3 pointer-events-none" />
         <div className="relative max-w-3xl mx-auto">
-          <span className="inline-block bg-[#c8a84b]/20 border border-[#c8a84b]/40 text-[#e8c96a] text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-block bg-white/20 border border-white/40 text-[#e63333] text-xs tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
             MARA Registered Agent
           </span>
           <h1 className="font-playfair text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
             Your Journey to{" "}
-            <span className="text-[#e8c96a]">Australia</span>{" "}
+            <span className="text-[#e63333]">Australia</span>{" "}
             Starts Here
           </h1>
           <p className="text-white/75 text-lg font-light max-w-xl mx-auto mb-8 leading-relaxed">
             Expert education and immigration consultancy — from your first application to permanent residency. Trusted by hundreds of clients Australia-wide.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button onClick={() => setModalOpen(true)} className="bg-[#c8a84b] text-[#0a4a2e] font-medium px-8 py-3 rounded hover:bg-[#e8c96a] transition-colors">
+            <button onClick={() => setModalOpen(true)} className="bg-white text-[#0d1b4b] font-medium px-8 py-3 rounded hover:bg-[#e63333] transition-colors">
               Free Consultation
             </button>
-            <Link href="/visas" className="border border-white/40 text-white px-8 py-3 rounded hover:border-[#e8c96a] hover:bg-[#c8a84b]/10 transition-colors">
+            <Link href="/visas" className="border border-white/40 text-white px-8 py-3 rounded hover:border-[#e63333] hover:bg-white/10 transition-colors">
               Explore Visa Options
             </Link>
           </div>
           <div className="mt-14 pt-10 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="font-playfair text-3xl font-bold text-[#e8c96a]">{s.num}</div>
+                <div className="font-playfair text-3xl font-bold text-[#e63333]">{s.num}</div>
                 <div className="text-xs text-white/55 mt-1 tracking-wide">{s.label}</div>
               </div>
             ))}
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-20 px-6 bg-[#faf7f2]">
+      <section id="services" className="py-20 px-6 bg-[#f4f6ff]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <p className="section-label">What we do</p>
@@ -130,7 +130,7 @@ export default function Home() {
                 key={s.title}
                 className="bg-white border border-gray-100 rounded-xl p-7 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               >
-                <div className="w-11 h-11 rounded-lg bg-[#0a4a2e]/8 flex items-center justify-center mb-4 text-[#1a6b42]">
+                <div className="w-11 h-11 rounded-lg bg-[#0d1b4b]/8 flex items-center justify-center mb-4 text-[#1a2f7a]">
                   {s.icon}
                 </div>
                 <h3 className="font-medium text-gray-900 mb-2">{s.title}</h3>
@@ -139,15 +139,15 @@ export default function Home() {
             ))}
           </div>
           {/* AI teaser */}
-          <div className="mt-10 bg-gradient-to-r from-[#0a4a2e]/6 to-[#c8a84b]/8 border border-[#0a4a2e]/12 rounded-xl p-6 flex items-center justify-between gap-4 flex-wrap">
+          <div className="mt-10 bg-gradient-to-r from-[#0d1b4b]/6 to-[#cc0000]/8 border border-[#0d1b4b]/12 rounded-xl p-6 flex items-center justify-between gap-4 flex-wrap">
             <div>
               <p className="text-sm text-gray-600">
-                <strong className="text-[#0a4a2e]">New:</strong> Try our AI visa assistant — instant answers to your eligibility questions, 24/7.
+                <strong className="text-[#0d1b4b]">New:</strong> Try our AI visa assistant — instant answers to your eligibility questions, 24/7.
               </p>
             </div>
             <Link
               href="/visas"
-              className="bg-[#1a6b42] text-white text-sm font-medium px-5 py-2 rounded hover:bg-[#0a4a2e] transition-colors whitespace-nowrap"
+              className="bg-[#1a2f7a] text-white text-sm font-medium px-5 py-2 rounded hover:bg-[#0d1b4b] transition-colors whitespace-nowrap"
             >
               Check your eligibility →
             </Link>
@@ -158,10 +158,10 @@ export default function Home() {
       {/* ABOUT STRIP */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-          <div className="bg-gradient-to-br from-[#0a4a2e] to-[#1a6b42] rounded-2xl p-8 text-white">
-            <p className="text-xs tracking-widest uppercase text-[#e8c96a] mb-4">Meet Our Director</p>
+          <div className="bg-gradient-to-br from-[#0d1b4b] to-[#1a2f7a] rounded-2xl p-8 text-white">
+            <p className="text-xs tracking-widest uppercase text-[#e63333] mb-4">Meet Our Director</p>
             <h3 className="font-playfair text-2xl font-bold mb-1">Rashmi</h3>
-            <p className="text-[#e8c96a] text-sm mb-6">Founder & Registered Migration Agent</p>
+            <p className="text-[#e63333] text-sm mb-6">Founder & Registered Migration Agent</p>
             <div className="space-y-3">
               {[
                 "Graduate Certificate in Australian Migration Law & Practice",
@@ -173,7 +173,7 @@ export default function Home() {
                   key={q}
                   className={`rounded-lg px-4 py-3 text-sm leading-snug ${
                     i === 3
-                      ? "bg-[#c8a84b]/20 border border-[#c8a84b]/30"
+                      ? "bg-white/20 border border-white/30"
                       : "bg-white/10"
                   }`}
                 >
@@ -193,10 +193,10 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-2">
               {["MARA Registered","Education Specialists","Sydney Based","Nationwide Service","End-to-End Support"].map(t => (
-                <span key={t} className="bg-[#0a4a2e]/8 text-[#1a6b42] text-xs px-3 py-1.5 rounded-full font-medium">{t}</span>
+                <span key={t} className="bg-[#0d1b4b]/8 text-[#1a2f7a] text-xs px-3 py-1.5 rounded-full font-medium">{t}</span>
               ))}
             </div>
-            <Link href="/about" className="inline-block mt-6 text-[#1a6b42] text-sm font-medium hover:underline">
+            <Link href="/about" className="inline-block mt-6 text-[#1a2f7a] text-sm font-medium hover:underline">
               Read more about us →
             </Link>
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="bg-[#0a4a2e] py-20 px-6 text-center">
+      <section className="bg-[#0d1b4b] py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-playfair text-3xl font-bold text-white mb-4">Ready to Start Your Journey?</h2>
           <p className="text-white/65 text-base mb-8 leading-relaxed">
@@ -213,11 +213,11 @@ export default function Home() {
           <div className="flex gap-4 justify-center flex-wrap">
             <button
               onClick={() => setModalOpen(true)}
-              className="bg-[#c8a84b] text-[#0a4a2e] font-medium px-8 py-3 rounded hover:bg-[#e8c96a] transition-colors"
+              className="bg-white text-[#0d1b4b] font-medium px-8 py-3 rounded hover:bg-[#e63333] transition-colors"
             >
               Book Free Consultation
             </button>
-            <Link href="/contact" className="border border-white/40 text-white px-8 py-3 rounded hover:border-[#e8c96a] transition-colors">
+            <Link href="/contact" className="border border-white/40 text-white px-8 py-3 rounded hover:border-[#e63333] transition-colors">
               Get in touch
             </Link>
           </div>
